@@ -1,0 +1,14 @@
+build
+bin/*
+Sample/*
+build
+osm2pgrouting
+tools/vagrant/packaging.sh
+*.o
+*.out
+*.osm
+*~
+.project
+.cproject
+.vagrant
+run.sh
