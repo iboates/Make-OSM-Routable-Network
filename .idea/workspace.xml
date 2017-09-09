@@ -29,8 +29,8 @@
       <file leaf-file-name="make_osm_routable_network.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="772" column="65" lean-forward="true" selection-start-line="772" selection-start-column="65" selection-end-line="772" selection-end-column="65" />
+            <state relative-caret-position="-416">
+              <caret line="688" column="87" lean-forward="false" selection-start-line="688" selection-start-column="87" selection-end-line="688" selection-end-column="87" />
               <folding>
                 <element signature="e#2265#19850#0" expanded="false" />
                 <element signature="e#2285#4962#0" expanded="false" />
@@ -42,26 +42,26 @@
                 <element signature="e#22106#23328#0" expanded="false" />
                 <element signature="e#23404#23849#0" expanded="false" />
                 <element signature="e#24099#26235#0" expanded="false" />
-                <element signature="e#26613#26931#0" expanded="false" />
-                <element signature="e#34333#35787#0" expanded="false" />
-                <element signature="e#35832#38029#0" expanded="false" />
-                <element signature="e#38073#38407#0" expanded="false" />
-                <element signature="e#38458#38794#0" expanded="false" />
-                <element signature="e#38839#39021#0" expanded="false" />
-                <element signature="e#39896#40420#0" expanded="false" />
-                <element signature="e#40461#40990#0" expanded="false" />
-                <marker date="1504890722235" expanded="false" signature="41055:41335" ph="..." />
-                <marker date="1504890722235" expanded="false" signature="41400:42025" ph="..." />
-                <marker date="1504890722235" expanded="false" signature="42090:42750" ph="..." />
-                <marker date="1504890722235" expanded="false" signature="42792:42997" ph="..." />
-                <marker date="1504890722235" expanded="false" signature="43033:44382" ph="..." />
-                <marker date="1504890722235" expanded="false" signature="44452:45156" ph="..." />
-                <marker date="1504890722235" expanded="false" signature="45230:45572" ph="..." />
-                <marker date="1504890722235" expanded="false" signature="45617:46276" ph="..." />
-                <marker date="1504890722235" expanded="false" signature="46343:46781" ph="..." />
-                <marker date="1504890722235" expanded="false" signature="46850:47383" ph="..." />
-                <marker date="1504890722235" expanded="true" signature="47157:47195" ph="CREATE EXTEN... postgis" />
-                <marker date="1504890722235" expanded="true" signature="47209:47249" ph="CREATE EXTEN... pgrouting" />
+                <element signature="e#28302#28620#0" expanded="false" />
+                <element signature="e#34391#35845#0" expanded="false" />
+                <element signature="e#38281#38615#0" expanded="false" />
+                <element signature="e#38666#39002#0" expanded="false" />
+                <element signature="e#39047#39229#0" expanded="false" />
+                <element signature="e#39276#40058#0" expanded="false" />
+                <element signature="e#40104#40628#0" expanded="false" />
+                <element signature="e#40669#41198#0" expanded="false" />
+                <element signature="e#41273#41543#0" expanded="false" />
+                <element signature="e#41618#42233#0" expanded="false" />
+                <element signature="e#42308#42958#0" expanded="false" />
+                <element signature="e#43010#43205#0" expanded="false" />
+                <element signature="e#43251#44590#0" expanded="false" />
+                <element signature="e#44670#45364#0" expanded="false" />
+                <element signature="e#45448#45780#0" expanded="false" />
+                <element signature="e#45835#46484#0" expanded="false" />
+                <element signature="e#46561#46989#0" expanded="false" />
+                <element signature="e#47068#47591#0" expanded="false" />
+                <marker date="1504959691345" expanded="true" signature="47365:47403" ph="CREATE EXTEN... postgis" />
+                <marker date="1504959691345" expanded="true" signature="47417:47457" ph="CREATE EXTEN... pgrouting" />
               </folding>
             </state>
           </provider>
@@ -141,8 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,6 +152,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,7 +481,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="25" width="1926" height="1058" extended-state="6" />
+    <frame x="383" y="218" width="1926" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14635417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -521,7 +521,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -548,26 +548,26 @@
             <element signature="e#22106#23328#0" expanded="false" />
             <element signature="e#23404#23849#0" expanded="false" />
             <element signature="e#24099#26235#0" expanded="false" />
-            <element signature="e#26613#26931#0" expanded="false" />
-            <element signature="e#34333#35787#0" expanded="false" />
-            <element signature="e#35832#38029#0" expanded="false" />
-            <element signature="e#38073#38407#0" expanded="false" />
-            <element signature="e#38458#38794#0" expanded="false" />
-            <element signature="e#38839#39021#0" expanded="false" />
-            <element signature="e#39896#40420#0" expanded="false" />
-            <element signature="e#40461#40990#0" expanded="false" />
-            <marker date="1504890722235" expanded="false" signature="41055:41335" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="41400:42025" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="42090:42750" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="42792:42997" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="43033:44382" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="44452:45156" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="45230:45572" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="45617:46276" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="46343:46781" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="46850:47383" ph="..." />
-            <marker date="1504890722235" expanded="true" signature="47157:47195" ph="CREATE EXTEN... postgis" />
-            <marker date="1504890722235" expanded="true" signature="47209:47249" ph="CREATE EXTEN... pgrouting" />
+            <element signature="e#28302#28620#0" expanded="false" />
+            <element signature="e#34391#35845#0" expanded="false" />
+            <element signature="e#38281#38615#0" expanded="false" />
+            <element signature="e#38666#39002#0" expanded="false" />
+            <element signature="e#39047#39229#0" expanded="false" />
+            <element signature="e#39276#40058#0" expanded="false" />
+            <element signature="e#40104#40628#0" expanded="false" />
+            <element signature="e#40669#41198#0" expanded="false" />
+            <element signature="e#41273#41543#0" expanded="false" />
+            <element signature="e#41618#42233#0" expanded="false" />
+            <element signature="e#42308#42958#0" expanded="false" />
+            <element signature="e#43010#43205#0" expanded="false" />
+            <element signature="e#43251#44590#0" expanded="false" />
+            <element signature="e#44670#45364#0" expanded="false" />
+            <element signature="e#45448#45780#0" expanded="false" />
+            <element signature="e#45835#46484#0" expanded="false" />
+            <element signature="e#46561#46989#0" expanded="false" />
+            <element signature="e#47068#47591#0" expanded="false" />
+            <marker date="1504959691345" expanded="true" signature="47365:47403" ph="CREATE EXTEN... postgis" />
+            <marker date="1504959691345" expanded="true" signature="47417:47457" ph="CREATE EXTEN... pgrouting" />
           </folding>
         </state>
       </provider>
@@ -643,26 +643,26 @@
             <element signature="e#22106#23328#0" expanded="false" />
             <element signature="e#23404#23849#0" expanded="false" />
             <element signature="e#24099#26235#0" expanded="false" />
-            <element signature="e#26613#26931#0" expanded="false" />
-            <element signature="e#34333#35787#0" expanded="false" />
-            <element signature="e#35832#38029#0" expanded="false" />
-            <element signature="e#38073#38407#0" expanded="false" />
-            <element signature="e#38458#38794#0" expanded="false" />
-            <element signature="e#38839#39021#0" expanded="false" />
-            <element signature="e#39896#40420#0" expanded="false" />
-            <element signature="e#40461#40990#0" expanded="false" />
-            <marker date="1504890722235" expanded="false" signature="41055:41335" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="41400:42025" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="42090:42750" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="42792:42997" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="43033:44382" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="44452:45156" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="45230:45572" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="45617:46276" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="46343:46781" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="46850:47383" ph="..." />
-            <marker date="1504890722235" expanded="true" signature="47157:47195" ph="CREATE EXTEN... postgis" />
-            <marker date="1504890722235" expanded="true" signature="47209:47249" ph="CREATE EXTEN... pgrouting" />
+            <element signature="e#28302#28620#0" expanded="false" />
+            <element signature="e#34391#35845#0" expanded="false" />
+            <element signature="e#38281#38615#0" expanded="false" />
+            <element signature="e#38666#39002#0" expanded="false" />
+            <element signature="e#39047#39229#0" expanded="false" />
+            <element signature="e#39276#40058#0" expanded="false" />
+            <element signature="e#40104#40628#0" expanded="false" />
+            <element signature="e#40669#41198#0" expanded="false" />
+            <element signature="e#41273#41543#0" expanded="false" />
+            <element signature="e#41618#42233#0" expanded="false" />
+            <element signature="e#42308#42958#0" expanded="false" />
+            <element signature="e#43010#43205#0" expanded="false" />
+            <element signature="e#43251#44590#0" expanded="false" />
+            <element signature="e#44670#45364#0" expanded="false" />
+            <element signature="e#45448#45780#0" expanded="false" />
+            <element signature="e#45835#46484#0" expanded="false" />
+            <element signature="e#46561#46989#0" expanded="false" />
+            <element signature="e#47068#47591#0" expanded="false" />
+            <marker date="1504959691345" expanded="true" signature="47365:47403" ph="CREATE EXTEN... postgis" />
+            <marker date="1504959691345" expanded="true" signature="47417:47457" ph="CREATE EXTEN... pgrouting" />
           </folding>
         </state>
       </provider>
@@ -738,26 +738,26 @@
             <element signature="e#22106#23328#0" expanded="false" />
             <element signature="e#23404#23849#0" expanded="false" />
             <element signature="e#24099#26235#0" expanded="false" />
-            <element signature="e#26613#26931#0" expanded="false" />
-            <element signature="e#34333#35787#0" expanded="false" />
-            <element signature="e#35832#38029#0" expanded="false" />
-            <element signature="e#38073#38407#0" expanded="false" />
-            <element signature="e#38458#38794#0" expanded="false" />
-            <element signature="e#38839#39021#0" expanded="false" />
-            <element signature="e#39896#40420#0" expanded="false" />
-            <element signature="e#40461#40990#0" expanded="false" />
-            <marker date="1504890722235" expanded="false" signature="41055:41335" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="41400:42025" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="42090:42750" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="42792:42997" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="43033:44382" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="44452:45156" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="45230:45572" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="45617:46276" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="46343:46781" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="46850:47383" ph="..." />
-            <marker date="1504890722235" expanded="true" signature="47157:47195" ph="CREATE EXTEN... postgis" />
-            <marker date="1504890722235" expanded="true" signature="47209:47249" ph="CREATE EXTEN... pgrouting" />
+            <element signature="e#28302#28620#0" expanded="false" />
+            <element signature="e#34391#35845#0" expanded="false" />
+            <element signature="e#38281#38615#0" expanded="false" />
+            <element signature="e#38666#39002#0" expanded="false" />
+            <element signature="e#39047#39229#0" expanded="false" />
+            <element signature="e#39276#40058#0" expanded="false" />
+            <element signature="e#40104#40628#0" expanded="false" />
+            <element signature="e#40669#41198#0" expanded="false" />
+            <element signature="e#41273#41543#0" expanded="false" />
+            <element signature="e#41618#42233#0" expanded="false" />
+            <element signature="e#42308#42958#0" expanded="false" />
+            <element signature="e#43010#43205#0" expanded="false" />
+            <element signature="e#43251#44590#0" expanded="false" />
+            <element signature="e#44670#45364#0" expanded="false" />
+            <element signature="e#45448#45780#0" expanded="false" />
+            <element signature="e#45835#46484#0" expanded="false" />
+            <element signature="e#46561#46989#0" expanded="false" />
+            <element signature="e#47068#47591#0" expanded="false" />
+            <marker date="1504959691345" expanded="true" signature="47365:47403" ph="CREATE EXTEN... postgis" />
+            <marker date="1504959691345" expanded="true" signature="47417:47457" ph="CREATE EXTEN... pgrouting" />
           </folding>
         </state>
       </provider>
@@ -833,26 +833,26 @@
             <element signature="e#22106#23328#0" expanded="false" />
             <element signature="e#23404#23849#0" expanded="false" />
             <element signature="e#24099#26235#0" expanded="false" />
-            <element signature="e#26613#26931#0" expanded="false" />
-            <element signature="e#34333#35787#0" expanded="false" />
-            <element signature="e#35832#38029#0" expanded="false" />
-            <element signature="e#38073#38407#0" expanded="false" />
-            <element signature="e#38458#38794#0" expanded="false" />
-            <element signature="e#38839#39021#0" expanded="false" />
-            <element signature="e#39896#40420#0" expanded="false" />
-            <element signature="e#40461#40990#0" expanded="false" />
-            <marker date="1504890722235" expanded="false" signature="41055:41335" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="41400:42025" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="42090:42750" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="42792:42997" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="43033:44382" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="44452:45156" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="45230:45572" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="45617:46276" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="46343:46781" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="46850:47383" ph="..." />
-            <marker date="1504890722235" expanded="true" signature="47157:47195" ph="CREATE EXTEN... postgis" />
-            <marker date="1504890722235" expanded="true" signature="47209:47249" ph="CREATE EXTEN... pgrouting" />
+            <element signature="e#28302#28620#0" expanded="false" />
+            <element signature="e#34391#35845#0" expanded="false" />
+            <element signature="e#38281#38615#0" expanded="false" />
+            <element signature="e#38666#39002#0" expanded="false" />
+            <element signature="e#39047#39229#0" expanded="false" />
+            <element signature="e#39276#40058#0" expanded="false" />
+            <element signature="e#40104#40628#0" expanded="false" />
+            <element signature="e#40669#41198#0" expanded="false" />
+            <element signature="e#41273#41543#0" expanded="false" />
+            <element signature="e#41618#42233#0" expanded="false" />
+            <element signature="e#42308#42958#0" expanded="false" />
+            <element signature="e#43010#43205#0" expanded="false" />
+            <element signature="e#43251#44590#0" expanded="false" />
+            <element signature="e#44670#45364#0" expanded="false" />
+            <element signature="e#45448#45780#0" expanded="false" />
+            <element signature="e#45835#46484#0" expanded="false" />
+            <element signature="e#46561#46989#0" expanded="false" />
+            <element signature="e#47068#47591#0" expanded="false" />
+            <marker date="1504959691345" expanded="true" signature="47365:47403" ph="CREATE EXTEN... postgis" />
+            <marker date="1504959691345" expanded="true" signature="47417:47457" ph="CREATE EXTEN... pgrouting" />
           </folding>
         </state>
       </provider>
@@ -865,13 +865,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/andorra-latest.osm" />
-    <entry file="file://$PROJECT_DIR$/osm2pgrouting-master/NEWS">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/osm2pgrouting-master/NEWS" />
     <entry file="file:///usr/lib/python2.7/dist-packages/qgis/PyQt/QtCore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -973,13 +967,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DEPENDENCIES">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DEPENDENCIES" />
     <entry file="file:///usr/local/lib/python2.7/dist-packages/overpy/format/osm_xml.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -996,8 +984,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="772" column="65" lean-forward="true" selection-start-line="772" selection-start-column="65" selection-end-line="772" selection-end-column="65" />
+        <state relative-caret-position="-416">
+          <caret line="688" column="87" lean-forward="false" selection-start-line="688" selection-start-column="87" selection-end-line="688" selection-end-column="87" />
           <folding>
             <element signature="e#2265#19850#0" expanded="false" />
             <element signature="e#2285#4962#0" expanded="false" />
@@ -1009,26 +997,26 @@
             <element signature="e#22106#23328#0" expanded="false" />
             <element signature="e#23404#23849#0" expanded="false" />
             <element signature="e#24099#26235#0" expanded="false" />
-            <element signature="e#26613#26931#0" expanded="false" />
-            <element signature="e#34333#35787#0" expanded="false" />
-            <element signature="e#35832#38029#0" expanded="false" />
-            <element signature="e#38073#38407#0" expanded="false" />
-            <element signature="e#38458#38794#0" expanded="false" />
-            <element signature="e#38839#39021#0" expanded="false" />
-            <element signature="e#39896#40420#0" expanded="false" />
-            <element signature="e#40461#40990#0" expanded="false" />
-            <marker date="1504890722235" expanded="false" signature="41055:41335" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="41400:42025" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="42090:42750" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="42792:42997" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="43033:44382" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="44452:45156" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="45230:45572" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="45617:46276" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="46343:46781" ph="..." />
-            <marker date="1504890722235" expanded="false" signature="46850:47383" ph="..." />
-            <marker date="1504890722235" expanded="true" signature="47157:47195" ph="CREATE EXTEN... postgis" />
-            <marker date="1504890722235" expanded="true" signature="47209:47249" ph="CREATE EXTEN... pgrouting" />
+            <element signature="e#28302#28620#0" expanded="false" />
+            <element signature="e#34391#35845#0" expanded="false" />
+            <element signature="e#38281#38615#0" expanded="false" />
+            <element signature="e#38666#39002#0" expanded="false" />
+            <element signature="e#39047#39229#0" expanded="false" />
+            <element signature="e#39276#40058#0" expanded="false" />
+            <element signature="e#40104#40628#0" expanded="false" />
+            <element signature="e#40669#41198#0" expanded="false" />
+            <element signature="e#41273#41543#0" expanded="false" />
+            <element signature="e#41618#42233#0" expanded="false" />
+            <element signature="e#42308#42958#0" expanded="false" />
+            <element signature="e#43010#43205#0" expanded="false" />
+            <element signature="e#43251#44590#0" expanded="false" />
+            <element signature="e#44670#45364#0" expanded="false" />
+            <element signature="e#45448#45780#0" expanded="false" />
+            <element signature="e#45835#46484#0" expanded="false" />
+            <element signature="e#46561#46989#0" expanded="false" />
+            <element signature="e#47068#47591#0" expanded="false" />
+            <marker date="1504959691345" expanded="true" signature="47365:47403" ph="CREATE EXTEN... postgis" />
+            <marker date="1504959691345" expanded="true" signature="47417:47457" ph="CREATE EXTEN... pgrouting" />
           </folding>
         </state>
       </provider>

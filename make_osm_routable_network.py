@@ -647,20 +647,14 @@ class MakeOSMRoutableNetwork:
             callback=self.run,
             parent=self.iface.mainWindow())
 
+        # Set up initial GUI state
+        self.set_initial_state()
 
-    def unload(self):
-        """Removes the plugin menu item and icon from QGIS GUI."""
-        for action in self.actions:
-            self.iface.removePluginMenu(
-                self.tr(u'&Make OSM Routable Network'),
-                action)
-            self.iface.removeToolBarIcon(action)
-        # remove the toolbar
-        del self.toolbar
+        self._bounding_box_toggle = False
+        self.dlg.bounding_box_checkBox.setChecked(False)
 
-
-    def run(self):
-        """Run method that performs all the real work"""
+        # Toggle bounding box
+        self.dlg.bounding_box_checkBox.clicked.connect(self.toggle_bounding_box)
 
         # Check that all dependencies are installed & up to date.
         self.check_dependencies()
@@ -670,9 +664,6 @@ class MakeOSMRoutableNetwork:
         if not os.path.isdir("data"):
             os.mkdir("data")
 
-        # Set up initial GUI state
-        self.set_initial_state()
-
         # Toggle between local file and Geofabrik region
         self._file_source_toggle = "file"
         self.dlg.local_file_radioButton.clicked.connect(self.select_local_osm)
@@ -680,10 +671,6 @@ class MakeOSMRoutableNetwork:
 
         # Set up file chooser
         self.dlg.local_file_pushButton.clicked.connect(self.open_file_chooser)
-
-        # Toggle bounding box
-        self._bounding_box_toggle = False
-        self.dlg.bounding_box_checkBox.clicked.connect(self.toggle_bounding_box)
 
         # Make "Current Extent" button generate the current extent in their respective lineEdits
         self.dlg.extent_pushButton.clicked.connect(self.add_current_extent)
@@ -700,6 +687,21 @@ class MakeOSMRoutableNetwork:
 
         # Change region3 based on region2
         self.dlg.region2_comboBox.currentIndexChanged[str].connect(self.update_region3)
+
+
+    def unload(self):
+        """Removes the plugin menu item and icon from QGIS GUI."""
+        for action in self.actions:
+            self.iface.removePluginMenu(
+                self.tr(u'&Make OSM Routable Network'),
+                action)
+            self.iface.removeToolBarIcon(action)
+        # remove the toolbar
+        del self.toolbar
+
+
+    def run(self):
+        """Run method that performs all the real work"""
 
         # show the dialog
         self.dlg.show()
@@ -751,10 +753,10 @@ class MakeOSMRoutableNetwork:
                 left = self.dlg.bounding_box_left_lineEdit.text()
                 right = self.dlg.bounding_box_right_lineEdit.text()
                 bottom = self.dlg.bounding_box_bottom_lineEdit.text()
-    
+
                 osmosis_parameters = [
                     "osmosis/bin/osmosis",
-                    "--read-xml", "data/routing_data.osm",
+                    "--read-xml", routing_data_file,
                     "--bounding-box",
                     "top={0}".format(top), "left={0}".format(left), "right={0}".format(right), "bottom={0}".format(bottom),
                     "--write-xml", "data/routing_data_bb.osm",
@@ -773,8 +775,6 @@ class MakeOSMRoutableNetwork:
                 map_config = "map_configs/mapconfig_for_cars.xml"
             elif self.dlg.mapconfig_bicycles_radioButton.isChecked():
                 map_config = "map_configs/mapconfig_for_bicycles.xml"
-            elif self.dlg.mapconfig_pedestrians_radioButton.isChecked():
-                map_config = "osm2pgrouting-master/mapconfig_for_pedestrians.xml"
 
             # Set up other osm2pgrouting parameters
             if self.dlg.schema_checkBox.isChecked():
@@ -797,22 +797,29 @@ class MakeOSMRoutableNetwork:
             if self.dlg.nodes_checkBox.isChecked():
                 osm2pgrouting_parameters.append("--addnodes")
             if self.dlg.prefix_checkBox.isChecked():
-                osm2pgrouting_parameters.append(["--prefix", self.dlg.prefix_lineEdit.text().lower()])
+                osm2pgrouting_parameters.extend(["--prefix", self.dlg.prefix_lineEdit.text().lower()])
             if self.dlg.prefix_checkBox.isChecked():
-                osm2pgrouting_parameters.append(["--suffix", self.dlg.suffix_lineEdit.text().lower()])
+                osm2pgrouting_parameters.extend(["--suffix", self.dlg.suffix_lineEdit.text().lower()])
 
-            print(" ".join(osm2pgrouting_parameters))
+                for p in osm2pgrouting_parameters:
+                    print(p, type(p))
     
             osm2pgrouting_process = subprocess.Popen(osm2pgrouting_parameters, stdout=subprocess.PIPE)
             for line in iter(osm2pgrouting_process.stdout.readline, ''):
                 sys.stdout.write(line)
-    
-            #remove("data/routing_data.osm.bz2")
-            #remove("data/routing_data.osm")
-            #try:
-                #remove("data/routing_data_bb.osm")
-            #except OSError:
-                #pass
+
+            try:
+                remove("data/routing_data.osm.bz2")
+            except OSError:
+                pass
+            try:
+                remove("data/routing_data.osm")
+            except OSError:
+                pass
+            try:
+                remove("data/routing_data_bb.osm")
+            except OSError:
+                pass
 
         print("FINISHED")
 
@@ -861,6 +868,7 @@ class MakeOSMRoutableNetwork:
 
         subregions = sorted([subregion for subregion in self.REGIONS["Africa"].iterkeys()])
         self.dlg.region1_comboBox.addItems(subregions)
+        self.dlg.region1_comboBox.setCurrentIndex(self.dlg.region1_comboBox.findText("None"))
         self.dlg.region1_comboBox.setDisabled(True)
 
         subregions = sorted(subregion for subregion in self.REGIONS["Africa"]["None"].iterkeys())
@@ -877,6 +885,7 @@ class MakeOSMRoutableNetwork:
         self.dlg.mapconfig_std_radioButton.setChecked(True)
 
         # Bounding Box
+        self.dlg.bounding_box_checkBox.setChecked(False)
         self.dlg.extent_pushButton.setDisabled(True)
         self.dlg.bounding_box_top_lineEdit.setDisabled(True)
         self.dlg.bounding_box_left_lineEdit.setDisabled(True)
@@ -893,7 +902,6 @@ class MakeOSMRoutableNetwork:
         self.dlg.new_db_database_lineEdit.setDisabled(True)
         self.dlg.new_db_username_lineEdit.setDisabled(True)
         self.dlg.new_db_password_lineEdit.setDisabled(True)
-
 
         return None
 
