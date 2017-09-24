@@ -743,25 +743,6 @@ class MakeOSMRoutableNetwork:
                 }
                 self.set_optional_params()
 
-                # Add the connection to QGIS
-                settings = QSettings()
-                settings.setValue("PostgreSQL/connections/{0}/allowGeometrylessTables".format(self.db_credentials["name"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/authcfg".format(self.db_credentials["name"]), "")
-                settings.setValue("PostgreSQL/connections/{0}/database".format(self.db_credentials["name"]), self.db_credentials["dbname"])
-                settings.setValue("PostgreSQL/connections/{0}/dontResolveType".format(self.db_credentials["name"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/estimatedMetadata".format(self.db_credentials["name"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/geometryColumnsOnly".format(self.db_credentials["name"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/host".format(self.db_credentials["name"]), self.db_credentials["host"])
-                settings.setValue("PostgreSQL/connections/{0}/password".format(self.db_credentials["name"]), self.db_credentials["password"])
-                settings.setValue("PostgreSQL/connections/{0}/port".format(self.db_credentials["name"]), self.db_credentials["port"])
-                settings.setValue("PostgreSQL/connections/{0}/publicOnly".format(self.db_credentials["name"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/savePassword".format(self.db_credentials["name"]), self.db_credentials["save_password"])
-                settings.setValue("PostgreSQL/connections/{0}/saveUsername".format(self.db_credentials["name"]), self.db_credentials["save_username"])
-                settings.setValue("PostgreSQL/connections/{0}/service".format(self.db_credentials["name"]), self.db_credentials["service"])
-                settings.setValue("PostgreSQL/connections/{0}/sslmode".format(self.db_credentials["name"]), "1")
-                settings.setValue("PostgreSQL/connections/{0}/username".format(self.db_credentials["name"]), self.db_credentials["user"])
-                QCoreApplication.processEvents() # refresh browser panel
-
                 self.make_database(self.db_credentials["dbname"], self.db_credentials["schema"], self.db_credentials["host"],
                                    self.db_credentials["port"], self.db_credentials["user"], self.db_credentials["password"])
 
@@ -1260,6 +1241,34 @@ class MakeOSMRoutableNetwork:
         conn.commit()
         cur.close()
         conn.close()
+
+        # Add the connection to QGIS
+        settings = QSettings()
+        settings.setValue("PostgreSQL/connections/{0}/allowGeometrylessTables".format(self.db_credentials["name"]),
+                          "false")
+        settings.setValue("PostgreSQL/connections/{0}/authcfg".format(self.db_credentials["name"]), "")
+        settings.setValue("PostgreSQL/connections/{0}/database".format(self.db_credentials["name"]),
+                          self.db_credentials["dbname"])
+        settings.setValue("PostgreSQL/connections/{0}/dontResolveType".format(self.db_credentials["name"]), "false")
+        settings.setValue("PostgreSQL/connections/{0}/estimatedMetadata".format(self.db_credentials["name"]), "false")
+        settings.setValue("PostgreSQL/connections/{0}/geometryColumnsOnly".format(self.db_credentials["name"]), "false")
+        settings.setValue("PostgreSQL/connections/{0}/host".format(self.db_credentials["name"]),
+                          self.db_credentials["host"])
+        settings.setValue("PostgreSQL/connections/{0}/password".format(self.db_credentials["name"]),
+                          self.db_credentials["password"])
+        settings.setValue("PostgreSQL/connections/{0}/port".format(self.db_credentials["name"]),
+                          self.db_credentials["port"])
+        settings.setValue("PostgreSQL/connections/{0}/publicOnly".format(self.db_credentials["name"]), "false")
+        settings.setValue("PostgreSQL/connections/{0}/savePassword".format(self.db_credentials["name"]),
+                          self.db_credentials["save_password"])
+        settings.setValue("PostgreSQL/connections/{0}/saveUsername".format(self.db_credentials["name"]),
+                          self.db_credentials["save_username"])
+        settings.setValue("PostgreSQL/connections/{0}/service".format(self.db_credentials["name"]),
+                          self.db_credentials["service"])
+        settings.setValue("PostgreSQL/connections/{0}/sslmode".format(self.db_credentials["name"]), "1")
+        settings.setValue("PostgreSQL/connections/{0}/username".format(self.db_credentials["name"]),
+                          self.db_credentials["user"])
+        QCoreApplication.processEvents()  # refresh browser panel
 
         return None
 

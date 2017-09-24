@@ -9,7 +9,7 @@
 [general]
 name=Make OSM Routable Network
 qgisMinimumVersion=2.0
-description=Make OSM Routable Network
+description=This plugin provides a graphical interface to the osm2pgrouting tool.  Users can give a local .osm file, or select a predefined region & bounding box.  The output is a series of tables in a specified PostGIS database that is compatible with the PostGIS routing library, pgRouting.  The "osmosis" tool is used to perform bounding box clipping.  Please note that the user must already have downloaded & installed osm2pgrouting, as well as have a PostgreSQL database and access to the postgis and pgrouting extensions before using this plugin.
 version=0.1
 author=Isaac Boates
 email=iboates@gmail.com
