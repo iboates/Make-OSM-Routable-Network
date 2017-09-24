@@ -509,7 +509,7 @@
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>abcd</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="new_db_username_lineEdit">
@@ -522,7 +522,7 @@
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>isaac</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -561,7 +561,7 @@
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>abcd</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -626,7 +626,7 @@
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>5432</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -665,7 +665,7 @@
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>localhost</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="new_db_password_lineEdit">
@@ -678,7 +678,7 @@
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>isaac</string>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::Password</enum>

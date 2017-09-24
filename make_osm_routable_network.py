@@ -33,6 +33,7 @@ sip.setapi('QVariant', 2)
 from PyQt4 import QtGui, QtCore, QtSql
 from PyQt4.QtCore import QSettings, QTranslator, qVersion, QCoreApplication
 from PyQt4.QtGui import QAction, QIcon, QComboBox, QListWidget, QListWidgetItem, QFileDialog
+from PyQt4.QtSql import QSqlDatabase
 from qgis.core import QgsCoordinateReferenceSystem, QgsCoordinateTransform, QgsPoint
 # Initialize Qt resources from file resources.py
 import resources
@@ -54,7 +55,6 @@ class MakeOSMRoutableNetwork:
 
     # Lists of constant subregion names
 
-    # TODO: add "None" entries to everything
     REGIONS = {
         "Africa": {
             "None": {"None": ["None"]},
@@ -541,7 +541,6 @@ class MakeOSMRoutableNetwork:
         # Declare instance attributes
         self.actions = []
         self.menu = self.tr(u'&Make OSM Routable Network')
-        # TODO: We are going to let the user set this up in a future iteration
         self.toolbar = self.iface.addToolBar(u'MakeOSMRoutableNetwork')
         self.toolbar.setObjectName(u'MakeOSMRoutableNetwork')
 
@@ -650,11 +649,25 @@ class MakeOSMRoutableNetwork:
         # Set up initial GUI state
         self.set_initial_state()
 
+        # Toggle bounding box
         self._bounding_box_toggle = False
         self.dlg.bounding_box_checkBox.setChecked(False)
-
-        # Toggle bounding box
         self.dlg.bounding_box_checkBox.clicked.connect(self.toggle_bounding_box)
+
+        # Toggle schema
+        self._schema_toggle = False
+        self.dlg.schema_checkBox.setChecked(False)
+        self.dlg.schema_checkBox.clicked.connect(self.toggle_schema)
+
+        # Toggle prefix
+        self._prefix_toggle = False
+        self.dlg.prefix_checkBox.setChecked(False)
+        self.dlg.prefix_checkBox.clicked.connect(self.toggle_prefix)
+
+        # Toggle suffix
+        self._suffix_toggle = False
+        self.dlg.suffix_checkBox.setChecked(False)
+        self.dlg.suffix_checkBox.clicked.connect(self.toggle_suffix)
 
         # Check that all dependencies are installed & up to date.
         self.check_dependencies()
@@ -719,7 +732,8 @@ class MakeOSMRoutableNetwork:
             # Define credentials from dialog and create database if new connection was selected
             elif self.dlg.new_db_radioButton.isChecked():
                 db_credentials = {
-                    "connection_name": self.dlg.new_db_name_lineEdit.text(),
+                    "name": self.dlg.new_db_name_lineEdit.text(),
+                    "service": self.dlg.new_db_service_lineEdit.text(),
                     "host": self.dlg.new_db_host_lineEdit.text(),
                     "port": self.dlg.new_db_port_lineEdit.text(),
                     "dbname": self.dlg.new_db_database_lineEdit.text(),
@@ -728,6 +742,25 @@ class MakeOSMRoutableNetwork:
                 }
                 self.make_database(db_credentials["dbname"], db_credentials["host"], db_credentials["port"],
                                    db_credentials["user"], db_credentials["password"])
+
+                # Add the connection to QGIS
+                settings = QSettings()
+                settings.setValue("PostgreSQL/connections/{0}/allowGeometrylessTables".format(db_credentials["dbname"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/authcfg".format(db_credentials["dbname"]), "")
+                settings.setValue("PostgreSQL/connections/{0}/database".format(db_credentials["dbname"]), "upwork")
+                settings.setValue("PostgreSQL/connections/{0}/dontResolveType".format(db_credentials["dbname"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/estimatedMetadata".format(db_credentials["dbname"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/geometryColumnsOnly".format(db_credentials["dbname"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/host".format(db_credentials["dbname"]), db_credentials["host"])
+                settings.setValue("PostgreSQL/connections/{0}/password".format(db_credentials["dbname"]), db_credentials["password"])
+                settings.setValue("PostgreSQL/connections/{0}/port".format(db_credentials["dbname"]), db_credentials["port"])
+                settings.setValue("PostgreSQL/connections/{0}/publicOnly".format(db_credentials["dbname"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/savePassword".format(db_credentials["dbname"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/saveUsername".format(db_credentials["dbname"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/service".format(db_credentials["dbname"]), db_credentials["service"])
+                settings.setValue("PostgreSQL/connections/{0}/sslmode".format(db_credentials["dbname"]), "1")
+                settings.setValue("PostgreSQL/connections/{0}/username".format(db_credentials["dbname"]), db_credentials["user"])
+                QCoreApplication.processEvents() # refresh browser panel
 
             # Check for postgis & pgrouting extensions, add them in they are not there
             self.make_extensions(db_credentials["dbname"], db_credentials["host"], db_credentials["port"],
@@ -841,7 +874,7 @@ class MakeOSMRoutableNetwork:
         digit1 = psycopg2.__version__.split(".")[0]
         digit2 = psycopg2.__version__.split(".")[1]
         if not digit1 >= 2 and digit2 >= 7:
-            error = QtGui.QMessageBox.critical(self.dlg, "No osm2pgrouting!",
+            error = QtGui.QMessageBox.critical(self.dlg, "psycopg2 out of date!!",
                                                "This plugin requires that the psycopg2 python package be at least version 2.7.  Your version appears to be version {0}.{1}.  Please update psycopg2 and try again.".format(digit1, digit2),
                                                QtGui.QMessageBox.Ok)
             if error == QtGui.QMessageBox.Ok:
@@ -852,7 +885,6 @@ class MakeOSMRoutableNetwork:
 
     def set_initial_state(self):
 
-        # TODO: get schemas as well as databases
         # Database connections
         qs = QSettings()
 
@@ -891,6 +923,18 @@ class MakeOSMRoutableNetwork:
         self.dlg.bounding_box_left_lineEdit.setDisabled(True)
         self.dlg.bounding_box_right_lineEdit.setDisabled(True)
         self.dlg.bounding_box_bottom_lineEdit.setDisabled(True)
+
+        # Schema
+        self.dlg.bounding_box_checkBox.setChecked(False)
+        self.dlg.schema_lineEdit.setDisabled(True)
+
+        # Prefix
+        self.dlg.prefix_checkBox.setChecked(False)
+        self.dlg.prefix_lineEdit.setDisabled(True)
+
+        # Suffix
+        self.dlg.suffix_checkBox.setChecked(False)
+        self.dlg.suffix_lineEdit.setDisabled(True)
 
         # Database
         self.dlg.overwrite_checkBox.setDisabled(False)
@@ -955,6 +999,42 @@ class MakeOSMRoutableNetwork:
             self.dlg.bounding_box_bottom_lineEdit.setDisabled(False)
 
         self._bounding_box_toggle = not self._bounding_box_toggle
+
+        return None
+
+
+    def toggle_schema(self):
+
+        if self._schema_toggle:
+            self.dlg.schema_lineEdit.setDisabled(True)
+        else:
+            self.dlg.schema_lineEdit.setDisabled(False)
+
+        self._schema_toggle = not self._schema_toggle
+
+        return None
+
+
+    def toggle_prefix(self):
+
+        if self._prefix_toggle:
+            self.dlg.prefix_lineEdit.setDisabled(True)
+        else:
+            self.dlg.prefix_lineEdit.setDisabled(False)
+
+        self._prefix_toggle = not self._prefix_toggle
+
+        return None
+
+
+    def toggle_suffix(self):
+
+        if self._suffix_toggle:
+            self.dlg.suffix_lineEdit.setDisabled(True)
+        else:
+            self.dlg.suffix_lineEdit.setDisabled(False)
+
+        self._suffix_toggle = not self._suffix_toggle
 
         return None
 
@@ -1086,7 +1166,6 @@ class MakeOSMRoutableNetwork:
 
     def make_download_url(self, region, region1, region2, region3):
 
-        # TODO: rename to region0, region1, region2, region3
         region = self.format_region_name(region)
         region1 = self.format_region_name(region1)
         region2 = self.format_region_name(region2)
@@ -1159,19 +1238,30 @@ class MakeOSMRoutableNetwork:
 
     def make_extensions(self, dbname, host, port, user, password):
 
-        # TODO: make_extensions() only working on public schema for now
         conn_string = "dbname={0} host={1} port={2} user={3} password={4}".format(dbname, host, port, user, password)
         conn = dbconnect(conn_string)
         cur = conn.cursor()
         query = sql.SQL("""
         
-            CREATE EXTENSION IF NOT EXISTS postgis;
-            CREATE EXTENSION IF NOT EXISTS pgrouting;
+            CREATE EXTENSION IF NOT EXISTS postgis WITH SCHEMA {};
+            CREATE EXTENSION IF NOT EXISTS pgrouting WITH SCHEMA {};
         
-        """)
+        """).format(sql.Identifier(dbname))
         cur.execute(query)
         conn.commit()
         cur.close()
         conn.close()
+
+        return None
+
+
+    def make_database_connection(self, name, dbname, host, port, user, password):
+
+        db = QSqlDatabase.addDatabase(name)
+        db.setHostName(host)
+        db.setDatabaseName(dbname)
+        db.setPort(int(port))
+        db.setUserName(user)
+        db.setPassword(password)
 
         return None
