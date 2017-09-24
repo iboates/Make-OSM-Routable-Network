@@ -13,15 +13,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MakeOSMRoutableNetwork$make_osm_routable_network.coverage" NAME="make_osm_routable_network Coverage Results" MODIFIED="1504172837005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MakeOSMRoutableNetwork$Unittests_in_test.coverage" NAME="Unittests in test Coverage Results" MODIFIED="1504094626505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/MakeOSMRoutableNetwork$Unittests_in_test__2_.coverage" NAME="Unittests in test (2) Coverage Results" MODIFIED="1504094859005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/MakeOSMRoutableNetwork$Unittests_in_test__1_.coverage" NAME="Unittests in test (1) Coverage Results" MODIFIED="1504097480302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MakeOSMRoutableNetwork$make_osm_routable_network.coverage" NAME="make_osm_routable_network Coverage Results" MODIFIED="1504172837005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="MakeOSMRoutableNetwork" />
   </component>
@@ -30,32 +29,35 @@
       <file leaf-file-name="make_osm_routable_network.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2052">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="-3177">
+              <caret line="732" column="74" lean-forward="false" selection-start-line="732" selection-start-column="74" selection-end-line="732" selection-end-column="74" />
               <folding>
                 <element signature="e#2257#19842#0" expanded="false" />
                 <element signature="e#19860#22056#0" expanded="false" />
-                <element signature="e#24012#25462#1" expanded="false" />
-                <element signature="e#26181#28724#0" expanded="false" />
-                <element signature="e#36905#38364#0" expanded="false" />
-                <element signature="e#38409#41073#0" expanded="false" />
-                <element signature="e#41117#41451#0" expanded="false" />
-                <element signature="e#41502#41838#0" expanded="false" />
-                <element signature="e#41883#42065#0" expanded="false" />
-                <element signature="e#42112#42894#0" expanded="false" />
-                <element signature="e#42935#43159#0" expanded="false" />
-                <element signature="e#43200#43424#0" expanded="false" />
-                <element signature="e#43465#43689#0" expanded="false" />
-                <element signature="e#43735#44259#0" expanded="false" />
-                <element signature="e#44300#44829#0" expanded="false" />
-                <element signature="e#44904#45174#0" expanded="false" />
-                <element signature="e#45249#45864#0" expanded="false" />
-                <element signature="e#45939#46589#0" expanded="false" />
-                <element signature="e#46641#46836#0" expanded="false" />
-                <element signature="e#46882#48221#0" expanded="false" />
-                <element signature="e#48301#48934#0" expanded="false" />
-                <element signature="e#49018#49350#0" expanded="false" />
-                <element signature="e#49405#50054#0" expanded="false" />
+                <element signature="e#37283#38742#0" expanded="false" />
+                <element signature="e#38787#41451#0" expanded="false" />
+                <element signature="e#41495#41829#0" expanded="false" />
+                <element signature="e#41880#42216#0" expanded="false" />
+                <element signature="e#42261#42443#0" expanded="false" />
+                <element signature="e#42490#43272#0" expanded="false" />
+                <element signature="e#43313#43537#0" expanded="false" />
+                <element signature="e#43578#43802#0" expanded="false" />
+                <element signature="e#43843#44067#0" expanded="false" />
+                <element signature="e#44113#44637#0" expanded="false" />
+                <element signature="e#44678#45207#0" expanded="false" />
+                <element signature="e#45282#45552#0" expanded="false" />
+                <element signature="e#45627#46242#0" expanded="false" />
+                <element signature="e#46317#46967#0" expanded="false" />
+                <element signature="e#47019#47214#0" expanded="false" />
+                <element signature="e#47260#48599#0" expanded="false" />
+                <element signature="e#48679#49312#0" expanded="false" />
+                <element signature="e#49396#49728#0" expanded="false" />
+                <element signature="e#50475#51124#0" expanded="false" />
+                <element signature="e#51209#51639#0" expanded="false" />
+                <element signature="e#51726#52308#0" expanded="false" />
+                <element signature="e#52402#52614#0" expanded="false" />
+                <marker date="1506248643049" expanded="true" signature="52001:52060" ph="CREATE EXTEN... postgis" />
+                <marker date="1506248643049" expanded="true" signature="52074:52135" ph="CREATE EXTEN... pgrouting" />
               </folding>
             </state>
           </provider>
@@ -113,22 +115,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="13" />
     <option name="y" value="25" />
-    <option name="width" value="1922" />
-    <option name="height" value="1060" />
+    <option name="width" value="1910" />
+    <option name="height" value="1066" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -144,28 +137,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MakeOSMRoutableNetwork" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MakeOSMRoutableNetwork" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MakeOSMRoutableNetwork" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -493,10 +467,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1922" height="1060" extended-state="0" />
-    <editor active="false" />
+    <frame x="-3" y="25" width="1926" height="1058" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14613779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14479166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -507,6 +481,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -514,7 +489,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32878152" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +507,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -541,38 +515,41 @@
     <entry file="file:///usr/lib/python2.7/dist-packages/qgis/PyQt/QtCore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
-          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+          <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
           <folding>
             <element signature="e#2257#19842#0" expanded="false" />
             <element signature="e#19860#22056#0" expanded="false" />
-            <element signature="e#24012#25462#1" expanded="false" />
-            <element signature="e#26181#28724#0" expanded="false" />
-            <element signature="e#36905#38364#0" expanded="false" />
-            <element signature="e#38409#41073#0" expanded="false" />
-            <element signature="e#41117#41451#0" expanded="false" />
-            <element signature="e#41502#41838#0" expanded="false" />
-            <element signature="e#41883#42065#0" expanded="false" />
-            <element signature="e#42112#42894#0" expanded="false" />
-            <element signature="e#42935#43159#0" expanded="false" />
-            <element signature="e#43200#43424#0" expanded="false" />
-            <element signature="e#43465#43689#0" expanded="false" />
-            <element signature="e#43735#44259#0" expanded="false" />
-            <element signature="e#44300#44829#0" expanded="false" />
-            <element signature="e#44904#45174#0" expanded="false" />
-            <element signature="e#45249#45864#0" expanded="false" />
-            <element signature="e#45939#46589#0" expanded="false" />
-            <element signature="e#46641#46836#0" expanded="false" />
-            <element signature="e#46882#48221#0" expanded="false" />
-            <element signature="e#48301#48934#0" expanded="false" />
-            <element signature="e#49018#49350#0" expanded="false" />
-            <element signature="e#49405#50054#0" expanded="false" />
+            <element signature="e#37283#38742#0" expanded="false" />
+            <element signature="e#38787#41451#0" expanded="false" />
+            <element signature="e#41495#41829#0" expanded="false" />
+            <element signature="e#41880#42216#0" expanded="false" />
+            <element signature="e#42261#42443#0" expanded="false" />
+            <element signature="e#42490#43272#0" expanded="false" />
+            <element signature="e#43313#43537#0" expanded="false" />
+            <element signature="e#43578#43802#0" expanded="false" />
+            <element signature="e#43843#44067#0" expanded="false" />
+            <element signature="e#44113#44637#0" expanded="false" />
+            <element signature="e#44678#45207#0" expanded="false" />
+            <element signature="e#45282#45552#0" expanded="false" />
+            <element signature="e#45627#46242#0" expanded="false" />
+            <element signature="e#46317#46967#0" expanded="false" />
+            <element signature="e#47019#47214#0" expanded="false" />
+            <element signature="e#47260#48599#0" expanded="false" />
+            <element signature="e#48679#49312#0" expanded="false" />
+            <element signature="e#49396#49728#0" expanded="false" />
+            <element signature="e#50475#51124#0" expanded="false" />
+            <element signature="e#51209#51639#0" expanded="false" />
+            <element signature="e#51726#52308#0" expanded="false" />
+            <element signature="e#52402#52614#0" expanded="false" />
+            <marker date="1506248643049" expanded="true" signature="52001:52060" ph="CREATE EXTEN... postgis" />
+            <marker date="1506248643049" expanded="true" signature="52074:52135" ph="CREATE EXTEN... pgrouting" />
           </folding>
         </state>
       </provider>
@@ -580,87 +557,90 @@
     <entry file="file://$PROJECT_DIR$/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/qgis_interface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_init.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_qgis_environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_translations.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/qgis/PyQt/QtCore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_make_osm_routable_network_dialog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
+          <caret line="4" column="73" lean-forward="false" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
-          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+          <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
           <folding>
             <element signature="e#2257#19842#0" expanded="false" />
             <element signature="e#19860#22056#0" expanded="false" />
-            <element signature="e#24012#25462#1" expanded="false" />
-            <element signature="e#26181#28724#0" expanded="false" />
-            <element signature="e#36905#38364#0" expanded="false" />
-            <element signature="e#38409#41073#0" expanded="false" />
-            <element signature="e#41117#41451#0" expanded="false" />
-            <element signature="e#41502#41838#0" expanded="false" />
-            <element signature="e#41883#42065#0" expanded="false" />
-            <element signature="e#42112#42894#0" expanded="false" />
-            <element signature="e#42935#43159#0" expanded="false" />
-            <element signature="e#43200#43424#0" expanded="false" />
-            <element signature="e#43465#43689#0" expanded="false" />
-            <element signature="e#43735#44259#0" expanded="false" />
-            <element signature="e#44300#44829#0" expanded="false" />
-            <element signature="e#44904#45174#0" expanded="false" />
-            <element signature="e#45249#45864#0" expanded="false" />
-            <element signature="e#45939#46589#0" expanded="false" />
-            <element signature="e#46641#46836#0" expanded="false" />
-            <element signature="e#46882#48221#0" expanded="false" />
-            <element signature="e#48301#48934#0" expanded="false" />
-            <element signature="e#49018#49350#0" expanded="false" />
-            <element signature="e#49405#50054#0" expanded="false" />
+            <element signature="e#37283#38742#0" expanded="false" />
+            <element signature="e#38787#41451#0" expanded="false" />
+            <element signature="e#41495#41829#0" expanded="false" />
+            <element signature="e#41880#42216#0" expanded="false" />
+            <element signature="e#42261#42443#0" expanded="false" />
+            <element signature="e#42490#43272#0" expanded="false" />
+            <element signature="e#43313#43537#0" expanded="false" />
+            <element signature="e#43578#43802#0" expanded="false" />
+            <element signature="e#43843#44067#0" expanded="false" />
+            <element signature="e#44113#44637#0" expanded="false" />
+            <element signature="e#44678#45207#0" expanded="false" />
+            <element signature="e#45282#45552#0" expanded="false" />
+            <element signature="e#45627#46242#0" expanded="false" />
+            <element signature="e#46317#46967#0" expanded="false" />
+            <element signature="e#47019#47214#0" expanded="false" />
+            <element signature="e#47260#48599#0" expanded="false" />
+            <element signature="e#48679#49312#0" expanded="false" />
+            <element signature="e#49396#49728#0" expanded="false" />
+            <element signature="e#50475#51124#0" expanded="false" />
+            <element signature="e#51209#51639#0" expanded="false" />
+            <element signature="e#51726#52308#0" expanded="false" />
+            <element signature="e#52402#52614#0" expanded="false" />
+            <marker date="1506248643049" expanded="true" signature="52001:52060" ph="CREATE EXTEN... postgis" />
+            <marker date="1506248643049" expanded="true" signature="52074:52135" ph="CREATE EXTEN... pgrouting" />
           </folding>
         </state>
       </provider>
@@ -668,87 +648,90 @@
     <entry file="file://$PROJECT_DIR$/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/qgis_interface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_init.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_make_osm_routable_network_dialog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_qgis_environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_translations.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/qgis/PyQt/QtCore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
-          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+          <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
           <folding>
             <element signature="e#2257#19842#0" expanded="false" />
             <element signature="e#19860#22056#0" expanded="false" />
-            <element signature="e#24012#25462#1" expanded="false" />
-            <element signature="e#26181#28724#0" expanded="false" />
-            <element signature="e#36905#38364#0" expanded="false" />
-            <element signature="e#38409#41073#0" expanded="false" />
-            <element signature="e#41117#41451#0" expanded="false" />
-            <element signature="e#41502#41838#0" expanded="false" />
-            <element signature="e#41883#42065#0" expanded="false" />
-            <element signature="e#42112#42894#0" expanded="false" />
-            <element signature="e#42935#43159#0" expanded="false" />
-            <element signature="e#43200#43424#0" expanded="false" />
-            <element signature="e#43465#43689#0" expanded="false" />
-            <element signature="e#43735#44259#0" expanded="false" />
-            <element signature="e#44300#44829#0" expanded="false" />
-            <element signature="e#44904#45174#0" expanded="false" />
-            <element signature="e#45249#45864#0" expanded="false" />
-            <element signature="e#45939#46589#0" expanded="false" />
-            <element signature="e#46641#46836#0" expanded="false" />
-            <element signature="e#46882#48221#0" expanded="false" />
-            <element signature="e#48301#48934#0" expanded="false" />
-            <element signature="e#49018#49350#0" expanded="false" />
-            <element signature="e#49405#50054#0" expanded="false" />
+            <element signature="e#37283#38742#0" expanded="false" />
+            <element signature="e#38787#41451#0" expanded="false" />
+            <element signature="e#41495#41829#0" expanded="false" />
+            <element signature="e#41880#42216#0" expanded="false" />
+            <element signature="e#42261#42443#0" expanded="false" />
+            <element signature="e#42490#43272#0" expanded="false" />
+            <element signature="e#43313#43537#0" expanded="false" />
+            <element signature="e#43578#43802#0" expanded="false" />
+            <element signature="e#43843#44067#0" expanded="false" />
+            <element signature="e#44113#44637#0" expanded="false" />
+            <element signature="e#44678#45207#0" expanded="false" />
+            <element signature="e#45282#45552#0" expanded="false" />
+            <element signature="e#45627#46242#0" expanded="false" />
+            <element signature="e#46317#46967#0" expanded="false" />
+            <element signature="e#47019#47214#0" expanded="false" />
+            <element signature="e#47260#48599#0" expanded="false" />
+            <element signature="e#48679#49312#0" expanded="false" />
+            <element signature="e#49396#49728#0" expanded="false" />
+            <element signature="e#50475#51124#0" expanded="false" />
+            <element signature="e#51209#51639#0" expanded="false" />
+            <element signature="e#51726#52308#0" expanded="false" />
+            <element signature="e#52402#52614#0" expanded="false" />
+            <marker date="1506248643049" expanded="true" signature="52001:52060" ph="CREATE EXTEN... postgis" />
+            <marker date="1506248643049" expanded="true" signature="52074:52135" ph="CREATE EXTEN... pgrouting" />
           </folding>
         </state>
       </provider>
@@ -756,87 +739,90 @@
     <entry file="file://$PROJECT_DIR$/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/qgis_interface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_init.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_qgis_environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_translations.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/qgis/PyQt/QtCore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_make_osm_routable_network_dialog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3744">
-          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+          <caret line="208" column="0" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
           <folding>
             <element signature="e#2257#19842#0" expanded="false" />
             <element signature="e#19860#22056#0" expanded="false" />
-            <element signature="e#24012#25462#1" expanded="false" />
-            <element signature="e#26181#28724#0" expanded="false" />
-            <element signature="e#36905#38364#0" expanded="false" />
-            <element signature="e#38409#41073#0" expanded="false" />
-            <element signature="e#41117#41451#0" expanded="false" />
-            <element signature="e#41502#41838#0" expanded="false" />
-            <element signature="e#41883#42065#0" expanded="false" />
-            <element signature="e#42112#42894#0" expanded="false" />
-            <element signature="e#42935#43159#0" expanded="false" />
-            <element signature="e#43200#43424#0" expanded="false" />
-            <element signature="e#43465#43689#0" expanded="false" />
-            <element signature="e#43735#44259#0" expanded="false" />
-            <element signature="e#44300#44829#0" expanded="false" />
-            <element signature="e#44904#45174#0" expanded="false" />
-            <element signature="e#45249#45864#0" expanded="false" />
-            <element signature="e#45939#46589#0" expanded="false" />
-            <element signature="e#46641#46836#0" expanded="false" />
-            <element signature="e#46882#48221#0" expanded="false" />
-            <element signature="e#48301#48934#0" expanded="false" />
-            <element signature="e#49018#49350#0" expanded="false" />
-            <element signature="e#49405#50054#0" expanded="false" />
+            <element signature="e#37283#38742#0" expanded="false" />
+            <element signature="e#38787#41451#0" expanded="false" />
+            <element signature="e#41495#41829#0" expanded="false" />
+            <element signature="e#41880#42216#0" expanded="false" />
+            <element signature="e#42261#42443#0" expanded="false" />
+            <element signature="e#42490#43272#0" expanded="false" />
+            <element signature="e#43313#43537#0" expanded="false" />
+            <element signature="e#43578#43802#0" expanded="false" />
+            <element signature="e#43843#44067#0" expanded="false" />
+            <element signature="e#44113#44637#0" expanded="false" />
+            <element signature="e#44678#45207#0" expanded="false" />
+            <element signature="e#45282#45552#0" expanded="false" />
+            <element signature="e#45627#46242#0" expanded="false" />
+            <element signature="e#46317#46967#0" expanded="false" />
+            <element signature="e#47019#47214#0" expanded="false" />
+            <element signature="e#47260#48599#0" expanded="false" />
+            <element signature="e#48679#49312#0" expanded="false" />
+            <element signature="e#49396#49728#0" expanded="false" />
+            <element signature="e#50475#51124#0" expanded="false" />
+            <element signature="e#51209#51639#0" expanded="false" />
+            <element signature="e#51726#52308#0" expanded="false" />
+            <element signature="e#52402#52614#0" expanded="false" />
+            <marker date="1506248643049" expanded="true" signature="52001:52060" ph="CREATE EXTEN... postgis" />
+            <marker date="1506248643049" expanded="true" signature="52074:52135" ph="CREATE EXTEN... pgrouting" />
           </folding>
         </state>
       </provider>
@@ -844,7 +830,7 @@
     <entry file="file:///usr/lib/python2.7/dist-packages/qgis/PyQt/QtCore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -853,70 +839,70 @@
     <entry file="file:///usr/lib/python2.7/dist-packages/qgis/PyQt/QtCore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_qgis_environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_translations.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+          <caret line="41" column="38" lean-forward="false" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_init.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/qgis_interface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_make_osm_routable_network_dialog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/make_osm_routable_network_dialog_base.ui">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/make_osm_routable_network_dialog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -941,7 +927,7 @@
     <entry file="file:///usr/lib/python2.7/xml/sax/saxutils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -950,38 +936,41 @@
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2052">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="-3177">
+          <caret line="732" column="74" lean-forward="false" selection-start-line="732" selection-start-column="74" selection-end-line="732" selection-end-column="74" />
           <folding>
             <element signature="e#2257#19842#0" expanded="false" />
             <element signature="e#19860#22056#0" expanded="false" />
-            <element signature="e#24012#25462#1" expanded="false" />
-            <element signature="e#26181#28724#0" expanded="false" />
-            <element signature="e#36905#38364#0" expanded="false" />
-            <element signature="e#38409#41073#0" expanded="false" />
-            <element signature="e#41117#41451#0" expanded="false" />
-            <element signature="e#41502#41838#0" expanded="false" />
-            <element signature="e#41883#42065#0" expanded="false" />
-            <element signature="e#42112#42894#0" expanded="false" />
-            <element signature="e#42935#43159#0" expanded="false" />
-            <element signature="e#43200#43424#0" expanded="false" />
-            <element signature="e#43465#43689#0" expanded="false" />
-            <element signature="e#43735#44259#0" expanded="false" />
-            <element signature="e#44300#44829#0" expanded="false" />
-            <element signature="e#44904#45174#0" expanded="false" />
-            <element signature="e#45249#45864#0" expanded="false" />
-            <element signature="e#45939#46589#0" expanded="false" />
-            <element signature="e#46641#46836#0" expanded="false" />
-            <element signature="e#46882#48221#0" expanded="false" />
-            <element signature="e#48301#48934#0" expanded="false" />
-            <element signature="e#49018#49350#0" expanded="false" />
-            <element signature="e#49405#50054#0" expanded="false" />
+            <element signature="e#37283#38742#0" expanded="false" />
+            <element signature="e#38787#41451#0" expanded="false" />
+            <element signature="e#41495#41829#0" expanded="false" />
+            <element signature="e#41880#42216#0" expanded="false" />
+            <element signature="e#42261#42443#0" expanded="false" />
+            <element signature="e#42490#43272#0" expanded="false" />
+            <element signature="e#43313#43537#0" expanded="false" />
+            <element signature="e#43578#43802#0" expanded="false" />
+            <element signature="e#43843#44067#0" expanded="false" />
+            <element signature="e#44113#44637#0" expanded="false" />
+            <element signature="e#44678#45207#0" expanded="false" />
+            <element signature="e#45282#45552#0" expanded="false" />
+            <element signature="e#45627#46242#0" expanded="false" />
+            <element signature="e#46317#46967#0" expanded="false" />
+            <element signature="e#47019#47214#0" expanded="false" />
+            <element signature="e#47260#48599#0" expanded="false" />
+            <element signature="e#48679#49312#0" expanded="false" />
+            <element signature="e#49396#49728#0" expanded="false" />
+            <element signature="e#50475#51124#0" expanded="false" />
+            <element signature="e#51209#51639#0" expanded="false" />
+            <element signature="e#51726#52308#0" expanded="false" />
+            <element signature="e#52402#52614#0" expanded="false" />
+            <marker date="1506248643049" expanded="true" signature="52001:52060" ph="CREATE EXTEN... postgis" />
+            <marker date="1506248643049" expanded="true" signature="52074:52135" ph="CREATE EXTEN... pgrouting" />
           </folding>
         </state>
       </provider>

@@ -727,11 +727,12 @@ class MakeOSMRoutableNetwork:
             # Get credentials if a pre-existing connection from QGIS was selected
             if self.dlg.existing_db_radioButton.isChecked():
                 db_name = self.dlg.db_listWidget.currentItem().text()
-                db_credentials = self.get_db_credentials(db_name)
+                self.db_credentials = self.get_db_credentials(db_name)
+                self.set_optional_params()
 
             # Define credentials from dialog and create database if new connection was selected
             elif self.dlg.new_db_radioButton.isChecked():
-                db_credentials = {
+                self.db_credentials = {
                     "name": self.dlg.new_db_name_lineEdit.text(),
                     "service": self.dlg.new_db_service_lineEdit.text(),
                     "host": self.dlg.new_db_host_lineEdit.text(),
@@ -740,31 +741,33 @@ class MakeOSMRoutableNetwork:
                     "user": self.dlg.new_db_username_lineEdit.text(),
                     "password": self.dlg.new_db_password_lineEdit.text()
                 }
-                self.make_database(db_credentials["dbname"], db_credentials["host"], db_credentials["port"],
-                                   db_credentials["user"], db_credentials["password"])
+                self.set_optional_params()
 
                 # Add the connection to QGIS
                 settings = QSettings()
-                settings.setValue("PostgreSQL/connections/{0}/allowGeometrylessTables".format(db_credentials["dbname"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/authcfg".format(db_credentials["dbname"]), "")
-                settings.setValue("PostgreSQL/connections/{0}/database".format(db_credentials["dbname"]), "upwork")
-                settings.setValue("PostgreSQL/connections/{0}/dontResolveType".format(db_credentials["dbname"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/estimatedMetadata".format(db_credentials["dbname"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/geometryColumnsOnly".format(db_credentials["dbname"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/host".format(db_credentials["dbname"]), db_credentials["host"])
-                settings.setValue("PostgreSQL/connections/{0}/password".format(db_credentials["dbname"]), db_credentials["password"])
-                settings.setValue("PostgreSQL/connections/{0}/port".format(db_credentials["dbname"]), db_credentials["port"])
-                settings.setValue("PostgreSQL/connections/{0}/publicOnly".format(db_credentials["dbname"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/savePassword".format(db_credentials["dbname"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/saveUsername".format(db_credentials["dbname"]), "false")
-                settings.setValue("PostgreSQL/connections/{0}/service".format(db_credentials["dbname"]), db_credentials["service"])
-                settings.setValue("PostgreSQL/connections/{0}/sslmode".format(db_credentials["dbname"]), "1")
-                settings.setValue("PostgreSQL/connections/{0}/username".format(db_credentials["dbname"]), db_credentials["user"])
+                settings.setValue("PostgreSQL/connections/{0}/allowGeometrylessTables".format(self.db_credentials["name"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/authcfg".format(self.db_credentials["name"]), "")
+                settings.setValue("PostgreSQL/connections/{0}/database".format(self.db_credentials["name"]), self.db_credentials["dbname"])
+                settings.setValue("PostgreSQL/connections/{0}/dontResolveType".format(self.db_credentials["name"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/estimatedMetadata".format(self.db_credentials["name"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/geometryColumnsOnly".format(self.db_credentials["name"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/host".format(self.db_credentials["name"]), self.db_credentials["host"])
+                settings.setValue("PostgreSQL/connections/{0}/password".format(self.db_credentials["name"]), self.db_credentials["password"])
+                settings.setValue("PostgreSQL/connections/{0}/port".format(self.db_credentials["name"]), self.db_credentials["port"])
+                settings.setValue("PostgreSQL/connections/{0}/publicOnly".format(self.db_credentials["name"]), "false")
+                settings.setValue("PostgreSQL/connections/{0}/savePassword".format(self.db_credentials["name"]), self.db_credentials["save_password"])
+                settings.setValue("PostgreSQL/connections/{0}/saveUsername".format(self.db_credentials["name"]), self.db_credentials["save_username"])
+                settings.setValue("PostgreSQL/connections/{0}/service".format(self.db_credentials["name"]), self.db_credentials["service"])
+                settings.setValue("PostgreSQL/connections/{0}/sslmode".format(self.db_credentials["name"]), "1")
+                settings.setValue("PostgreSQL/connections/{0}/username".format(self.db_credentials["name"]), self.db_credentials["user"])
                 QCoreApplication.processEvents() # refresh browser panel
 
+                self.make_database(self.db_credentials["dbname"], self.db_credentials["schema"], self.db_credentials["host"],
+                                   self.db_credentials["port"], self.db_credentials["user"], self.db_credentials["password"])
+
             # Check for postgis & pgrouting extensions, add them in they are not there
-            self.make_extensions(db_credentials["dbname"], db_credentials["host"], db_credentials["port"],
-                                 db_credentials["user"], db_credentials["password"])
+            self.make_extensions(self.db_credentials["dbname"], self.db_credentials["schema"], self.db_credentials["host"],
+                                 self.db_credentials["port"], self.db_credentials["user"], self.db_credentials["password"])
 
             # Establish file names & download if necessary
             if self.dlg.local_file_radioButton.isChecked():
@@ -820,10 +823,10 @@ class MakeOSMRoutableNetwork:
                 "--file", routing_data_file,
                 "--conf", map_config,
                 "--schema", schema,
-                "--dbname", db_credentials["dbname"],
-                "--host", db_credentials["host"],
-                "--username", db_credentials["user"],
-                "--password", db_credentials["password"],
+                "--dbname", self.db_credentials["dbname"],
+                "--host", self.db_credentials["host"],
+                "--username", self.db_credentials["user"],
+                "--password", self.db_credentials["password"],
             ]
             if self.dlg.overwrite_checkBox.isChecked():
                 osm2pgrouting_parameters.append("--clean")
@@ -1197,6 +1200,29 @@ class MakeOSMRoutableNetwork:
         return None
 
 
+    def set_optional_params(self):
+
+        # Schema
+        if self.dlg.schema_checkBox.isChecked():
+            self.db_credentials["schema"] = self.dlg.schema_lineEdit.text()
+        else:
+            self.db_credentials["schema"] = "public"
+
+        # Save username
+        if self.dlg.save_username_checkBox.isChecked():
+            self.db_credentials["save_username"] = "true"
+        else:
+            self.db_credentials["save_username"] = "false"
+
+        # Save password
+        if self.dlg.save_password_checkBox.isChecked():
+            self.db_credentials["save_password"] = "true"
+        else:
+            self.db_credentials["save_password"] = "false"
+
+        return None
+
+
     def get_db_credentials(self, db_name):
 
         db_credentials = {
@@ -1217,18 +1243,20 @@ class MakeOSMRoutableNetwork:
         return db_credentials
 
 
-    def make_database(self, dbname, host, port, user, password):
+    def make_database(self, dbname, schema, host, port, user, password):
 
         conn_string = "dbname=postgres host={0} port={1} user={2} password={3}".format(host, port, user, password)
         conn = dbconnect(conn_string)
         conn.autocommit = True
         cur = conn.cursor()
+
         query = sql.SQL("""
 
                     CREATE DATABASE {};
 
         """).format(sql.Identifier(dbname))
         cur.execute(query)
+
         conn.commit()
         cur.close()
         conn.close()
@@ -1236,18 +1264,20 @@ class MakeOSMRoutableNetwork:
         return None
 
 
-    def make_extensions(self, dbname, host, port, user, password):
+    def make_extensions(self, dbname, schema, host, port, user, password):
 
         conn_string = "dbname={0} host={1} port={2} user={3} password={4}".format(dbname, host, port, user, password)
         conn = dbconnect(conn_string)
         cur = conn.cursor()
         query = sql.SQL("""
         
-            CREATE EXTENSION IF NOT EXISTS postgis WITH SCHEMA {};
-            CREATE EXTENSION IF NOT EXISTS pgrouting WITH SCHEMA {};
+            CREATE SCHEMA IF NOT EXISTS {schema};
+            CREATE EXTENSION IF NOT EXISTS postgis WITH SCHEMA {schema};
+            CREATE EXTENSION IF NOT EXISTS pgrouting WITH SCHEMA {schema};
         
-        """).format(sql.Identifier(dbname))
+        """).format(schema=sql.Identifier(schema))
         cur.execute(query)
+
         conn.commit()
         cur.close()
         conn.close()
