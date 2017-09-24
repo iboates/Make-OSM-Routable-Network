@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="make_osm_routable_network.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="make_osm_routable_network.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3177">
+            <state relative-caret-position="-873">
               <caret line="732" column="74" lean-forward="false" selection-start-line="732" selection-start-column="74" selection-end-line="732" selection-end-column="74" />
               <folding>
                 <element signature="e#2257#19842#0" expanded="false" />
@@ -52,6 +52,7 @@
                 <element signature="e#47260#48599#0" expanded="false" />
                 <element signature="e#48679#49312#0" expanded="false" />
                 <element signature="e#49396#49728#0" expanded="false" />
+                <element signature="e#49775#50420#0" expanded="false" />
                 <element signature="e#50475#51124#0" expanded="false" />
                 <element signature="e#51209#51639#0" expanded="false" />
                 <element signature="e#51726#52308#0" expanded="false" />
@@ -59,6 +60,26 @@
                 <marker date="1506248643049" expanded="true" signature="52001:52060" ph="CREATE EXTEN... postgis" />
                 <marker date="1506248643049" expanded="true" signature="52074:52135" ph="CREATE EXTEN... pgrouting" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,6 +127,8 @@
         <option value="$PROJECT_DIR$/DEPENDENCIES" />
         <option value="/usr/local/lib/python2.7/dist-packages/overpy/format/osm_xml.py" />
         <option value="$PROJECT_DIR$/make_osm_routable_network.py" />
+        <option value="$PROJECT_DIR$/README.html" />
+        <option value="$PROJECT_DIR$/README.txt" />
       </list>
     </option>
   </component>
@@ -137,7 +160,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MakeOSMRoutableNetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MakeOSMRoutableNetwork" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
@@ -512,48 +545,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/python2.7/dist-packages/qgis/PyQt/QtCore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
-          <folding>
-            <element signature="e#2257#19842#0" expanded="false" />
-            <element signature="e#19860#22056#0" expanded="false" />
-            <element signature="e#37283#38742#0" expanded="false" />
-            <element signature="e#38787#41451#0" expanded="false" />
-            <element signature="e#41495#41829#0" expanded="false" />
-            <element signature="e#41880#42216#0" expanded="false" />
-            <element signature="e#42261#42443#0" expanded="false" />
-            <element signature="e#42490#43272#0" expanded="false" />
-            <element signature="e#43313#43537#0" expanded="false" />
-            <element signature="e#43578#43802#0" expanded="false" />
-            <element signature="e#43843#44067#0" expanded="false" />
-            <element signature="e#44113#44637#0" expanded="false" />
-            <element signature="e#44678#45207#0" expanded="false" />
-            <element signature="e#45282#45552#0" expanded="false" />
-            <element signature="e#45627#46242#0" expanded="false" />
-            <element signature="e#46317#46967#0" expanded="false" />
-            <element signature="e#47019#47214#0" expanded="false" />
-            <element signature="e#47260#48599#0" expanded="false" />
-            <element signature="e#48679#49312#0" expanded="false" />
-            <element signature="e#49396#49728#0" expanded="false" />
-            <element signature="e#50475#51124#0" expanded="false" />
-            <element signature="e#51209#51639#0" expanded="false" />
-            <element signature="e#51726#52308#0" expanded="false" />
-            <element signature="e#52402#52614#0" expanded="false" />
-            <marker date="1506248643049" expanded="true" signature="52001:52060" ph="CREATE EXTEN... postgis" />
-            <marker date="1506248643049" expanded="true" signature="52074:52135" ph="CREATE EXTEN... pgrouting" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -635,6 +626,7 @@
             <element signature="e#47260#48599#0" expanded="false" />
             <element signature="e#48679#49312#0" expanded="false" />
             <element signature="e#49396#49728#0" expanded="false" />
+            <element signature="e#49775#50420#0" expanded="false" />
             <element signature="e#50475#51124#0" expanded="false" />
             <element signature="e#51209#51639#0" expanded="false" />
             <element signature="e#51726#52308#0" expanded="false" />
@@ -726,6 +718,7 @@
             <element signature="e#47260#48599#0" expanded="false" />
             <element signature="e#48679#49312#0" expanded="false" />
             <element signature="e#49396#49728#0" expanded="false" />
+            <element signature="e#49775#50420#0" expanded="false" />
             <element signature="e#50475#51124#0" expanded="false" />
             <element signature="e#51209#51639#0" expanded="false" />
             <element signature="e#51726#52308#0" expanded="false" />
@@ -817,6 +810,7 @@
             <element signature="e#47260#48599#0" expanded="false" />
             <element signature="e#48679#49312#0" expanded="false" />
             <element signature="e#49396#49728#0" expanded="false" />
+            <element signature="e#49775#50420#0" expanded="false" />
             <element signature="e#50475#51124#0" expanded="false" />
             <element signature="e#51209#51639#0" expanded="false" />
             <element signature="e#51726#52308#0" expanded="false" />
@@ -942,7 +936,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/make_osm_routable_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3177">
+        <state relative-caret-position="-873">
           <caret line="732" column="74" lean-forward="false" selection-start-line="732" selection-start-column="74" selection-end-line="732" selection-end-column="74" />
           <folding>
             <element signature="e#2257#19842#0" expanded="false" />
@@ -965,6 +959,7 @@
             <element signature="e#47260#48599#0" expanded="false" />
             <element signature="e#48679#49312#0" expanded="false" />
             <element signature="e#49396#49728#0" expanded="false" />
+            <element signature="e#49775#50420#0" expanded="false" />
             <element signature="e#50475#51124#0" expanded="false" />
             <element signature="e#51209#51639#0" expanded="false" />
             <element signature="e#51726#52308#0" expanded="false" />
@@ -972,6 +967,22 @@
             <marker date="1506248643049" expanded="true" signature="52001:52060" ph="CREATE EXTEN... postgis" />
             <marker date="1506248643049" expanded="true" signature="52074:52135" ph="CREATE EXTEN... pgrouting" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

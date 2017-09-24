@@ -1,33 +1,10 @@
-Plugin Builder Results
+Make OSM Routable Network
 
-Your plugin MakeOSMRoutableNetwork was created in:
-    /home/isaac/.qgis2/python/plugins/MakeOSMRoutableNetwork
+This is a Python-based QGIS plugin that offers a visual interface for the osm2pgrouting tool.  It can read local OSMnfiles, or download regions from Geofabrik.  A bounding box may also be applied, which is created by osmosis.  The result is a series of tables in a specified database that is compatible with pgRouting, the PostGIS extension for PostgreSQL.
 
-Your QGIS plugin directory is located at:
-    /home/isaac/.qgis2/python/plugins
+Dependencies:
 
-What's Next:
-
-  * Copy the entire directory containing your new plugin to the QGIS plugin
-    directory
-
-  * Compile the resources file using pyrcc4
-
-  * Run the tests (``make test``)
-
-  * Test the plugin by enabling it in the QGIS plugin manager
-
-  * Customize it by editing the implementation file: ``make_osm_routable_network.py``
-
-  * Create your own custom icon, replacing the default icon.png
-
-  * Modify your user interface by opening MakeOSMRoutableNetwork.ui in Qt Designer
-
-  * You can use the Makefile to compile your Ui and resource files when
-    you make changes. This requires GNU make (gmake)
-
-For more information, see the PyQGIS Developer Cookbook at:
-http://www.qgis.org/pyqgis-cookbook/index.html
-
-(C) 2011-2014 GeoApt LLC - geoapt.com
-Git revision : $Format:%H$
+    osm2pgrouting: A command line tool that creates routing networks from OpenStreetMap .osm files. (http://pgrouting.org/docs/tools/osm2pgrouting.html)
+    Java: Required to run osmosis, the bounding-box tool.
+    PostgreSQL: Relational Database management software.
+    PostGIS & pgRouting: Extensions for PostgreSQL that enable geometry and routing for PostgreSQL, respectively.
